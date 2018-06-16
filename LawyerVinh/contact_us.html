@@ -1,0 +1,255 @@
+<html>
+
+<head< 
+<title></title>
+<link href="https://fonts.googleapis.com/css?family=Fira+Mono|Share+Tech+Mono" rel="stylesheet" rel="stylesheet" href="style.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+</head>
+
+<style>
+#at-law{color: white;}
+:root {
+    --primary: #ddd;
+    --dark: #333;
+    --light: #fff;
+    --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+  }
+
+  html {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--dark);
+  }
+
+  body {
+    background: #5F9EA0;
+    margin: 30px 50px;
+    line-height: 1.4;
+  }
+  
+  /* Navigation */
+
+  .main-nav ul {
+    display: grid;
+    grid-gap: 20px;
+    padding: 0;
+    list-style: none;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .main-nav a {
+    background: var(--primary);
+    display: block;
+    text-decoration: none;
+    padding: 0.8rem;
+    text-align: center;
+    color: var(--dark);
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    box-shadow: var(--shadow);
+  }
+.main-nav a:hover {
+  background: var(--dark);
+  color: var(--light);
+}
+.transbox1{
+text-align: center;
+margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: .8;
+color: black;
+margin-bottom: 50px;
+}
+
+
+
+/* Showcase */
+.showcase {
+  grid-area: showcase;
+  min-height: 400px;
+  background: url(https://images.pexels.com/photos/5199/hands-coffee-cup-apple.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-size: cover;
+  background-position: center;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  box-shadow: var(--shadow);
+}
+
+.showcase h1 {
+  font-size: 4rem;
+  margin-bottom: 0;
+  color: white;
+  
+}
+
+.showcase p {
+  font-size: 1.3rem;
+  margin-top: 0;
+  color: white;
+  }
+
+  input {padding: 10px;
+  font-size: inherit;
+}
+input[type="text"]{display: block;
+margin-bottom: 25px;
+width: 100%;
+border:2px solid black;}
+
+input[type="checkbox"]{margin-bottom: 25px;}
+
+input[type="submit"]{margin-top: 25px;
+display: block;
+margin-bottom: 25px;
+width: 100%;
+border:2px solid black;
+background: black;
+color: white;
+font-weight: bold;}
+
+form{margin: 20px auto;
+font-weight: bold;
+}
+
+  
+  legend{font-weight: bold;
+  }
+  
+  #transbox{margin: auto;
+  margin-left: 50px;
+  margin-right: auto;
+  background-color: #ffffff;
+  border: 2px solid black;
+  opacity: .9;
+color: black;}
+
+footer{text-align: center;
+}
+  #paragraph{text-align: left;
+  }
+  
+  #mail{margin-top: 25px;
+  }
+  
+  
+</style>
+
+
+<body>
+  <div id="logo-title">
+    <h1>
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALzSURBVGhD7dlJyE1hHMfxa57noYwLYylKkhILyjwrGyEbC0oKxUYoG2UhoUyJJAvTAgspYWGlSChEChkSZZ59f/HU4/R/zznc5977XM6vPvV2h3P+zz3nmc5bKlLktyzCXbzGHjRHXaUfzuJ7wmrURZpCxb5FshFyFNFnBK7AaoCzEtGmNbbgM6zi5Ru2oQmizETcg1W8cwtjEGW64SCswp2P2ACNVI2xBLsRTSbgGazinUsYAmU4LsO9NwU1Tws8h1+07xWWQlegI9Qvkn3nDlqipukDvyjfcfREIyzAY1ifk/WoaVSkOq9f1EPMhqLb6Tz89y3vMQA1zUCcxE1o2O2AttgMdXCrcMsZRJVheACr2CxzEU3a4G8bou/pakaTObAKzUO3ZFQ5DavQLJ/g5pyaR2uo/tBoZBWb5iV0RZV26Przz+pG9/cm3IAWj5ofrGItWkgeQg/oOBoB3ah3AlXZhGnfsQxP4QpTgzRj3/Zea4gaPg6Kliz3kfzMclQ006FCkif+gEGY7L2W9AZroF+7Ow7D+pzsREWixV/arK2r435l7QST72sJ0xdaHSzGCyQ/49MPEjQ6uZbsX2GdUI7A76Rak+mBg97Tw4epULQsOYfk933q/GposLiO/A7WCeUJGpqdV2AjWkF9ai3SjiXHoIVnkLiOnLZcF93fXZCVkbgK6xiOFp6zECwzYXVkn66CW+1mZRW+wDqO6HbdjvYIkqyO7Gjc74w80fyQ1q+uYzSCRB1ZxaWdULRJ+tNLrx/HOpZm/3UIMuFpD5HVkR2NWHmvgp9m0J7FP9YFDEbZyduR5RFmoJz0wg6cwkJoDik7vXENVtFJB9AJUUZbS6ton4bBaYg6WgtZxTv7oUc40UfPk6wG6CpE8dAsb9TZtAfwG7EPGsHqLuOx95exeqFIkSJF/stoJTsJ8wLRrlMr86pG/9S5CH9+CkEr81GoWvQIyCokhK2oWobCKiKEij3bsvLPNESbp10VMh9FIkyp9AN8uDX2/qSw0wAAAABJRU5ErkJggg==">     
+ <div id="at-law" alt="logo-title"> Vinh K. Ly Attorney At Law </div>
+    </h1>
+  </div>
+  <div class="wrapper">
+    <!-- Navigation -->
+    <nav class="main-nav">
+      <ul>
+        <li>
+          <a 
+  href="indexlawyervinh.html">Home</a> 
+        </li>
+  <li>
+    <a href="firm_overview.html">Firm Overview</a>
+    
+        </li>
+  <li>
+    <a href="practice_areas.html">Practice Areas
+    </a>
+    
+        </li>
+    <li>
+      <a 
+         href="contact_us.html">Contact Us
+      
+      </a>
+      
+        </li>
+   </ul>
+  </nav>
+  
+  <div class="transbox1">
+    <div id="title">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANpSURBVGhD7dhbqI1pHMfx5TgyTkMiZ0qNGjEu3CimJJqSw80k5dSMuUCmlIiaqGkkLiRTaiQ3Qwy5kGgaai6U1DQO4UozMUgGQ04zwve78ui1/Ndee+32Xnut3furT5b1/t+117Pf93me/7sLefLkydNw+agD6InCqw7gB4QHGk1xIA8zbzSqrShMxN9v3mhEB/ABihmOC4gK69kWdEIxn735ty9+QXRCvXmBr2G6YIovnmOhL0g37EV0cr14hM9hPsRRvF21XmKj/yFeqm/he6Uf0t5uYhLMYJyF77+3/O6BV8Ushlcre7w9XcIImHG4hnQs3EdOog/MdDxAaU2t/Yp+MNNwD9njZTdEV7BhMJ/gL0R1tbAP3WGcy9FdUnYgugH3GDMEvyOqa0ubkJbXDSg3b5sciNz1Z8H0wnFEda3tPyyFcc46d6O6pOJA9D++gumK3YjqWsu/mAHTG87ZqC6rWQNJvke6zOvQFsvzdYyHcY6eR1RXqqqB6CekvmYBniGqa4k/MBRmApyjUV2k6oHoN/SHmYp/ENVV4wS8jcxMVNuRt2gguooxMB8juzlV60c494xz0TkZ1TWlxQPREaQMQmoXmss55pKaMhpO9Ki2khYPZCdSK+MgTGrgovpS2UbVzS7dql7dy4jOaUrVA3mCRTCuYK5efqlVvkFsqXcgOjexvUiPDv7h4BS8NT/1DeJ+9TOic8upaiDZH2YvdhjZ49vRGWYFniJ7XBdhw2dGwkYwHbPeRtX4S1oLnzuy55fT7IG4KQ2A8fJfQVR3CD1gXAy+wzG4bC9DWrptxW8h+oxdSL2VTesdRHVZFQfihPTLeMuY+ai0NPpbTs8MpfFz1iC6WllnkPYUW/dziOqSJgfiCjIPxi/gzt7c3dw694aVcF+YC38h1XTRt+E+ZbzKLtNRncoOxFvHW8h4S7XXs7x7yjdIWY6omwgH4iROu6y3yJ8oram1/XA1M5NhT5Y9/s5AXCHWIzWGS1DpXq4lH/bGwgzEaaRjbwdyF6l1dsXwQCqqJ/cxG8a2Zhucj8WB+OQ3yhfElcIVI/qQeuEX34y0Z32B4p9M07rvClFuba9HPq2m1ibtO4XV8PEyOqGe2W2kvysUd92oqFE8xhyEBxtNuI80ouJADnYAXyJPnjx58tQ6hcJrX4AYV98jCL0AAAAASUVORK5CYII=" id="mail" alt="email symbol">
+	     </div>
+    <div id="description">
+      <h3> To find out more information on the specific ways I can help you, please fill out the form below.<br>
+	  Multilingual services are available in Vietnamese, Mandarin, Cantonese, and English. </h3>
+    </div>
+  </div>
+  
+   <!-- Top  Container -->
+  
+  <section class="top-container">
+  
+ 
+        <legend></legend>
+  <header class="showcase">
+    <form action="#" method="post" class="basic-info">
+    <input type="text" placeholder="Name">
+    <input type="text" placeholder="Email">
+	<input type="text" placeholder="Phone number">
+ 
+   <div id="transbox">
+ <fieldset>
+   <div>
+          <input type="checkbox" id="deportation" name="interest" value="deportation">
+          <label for="deportation">Deportation</label>
+        </div>
+        <div>
+          <input type="checkbox" id="visa" name="interest" value="visa">
+          <label for="visa">Visa</label>
+        </div>
+        <div>
+          <input type="checkbox" id="green_card" name="interest" value="green_card">
+          <label for="green_card">Green card</label>
+        </div>
+        <div>
+          <input type="checkbox" id="criminal_defense" name="interest" value="criminal_defense">
+          <label for="criminal_defense">Criminal defense</label>
+        </div>
+        <div>
+          <input type="checkbox" id="personal_injury" name="interest" value="personal_injury">
+          <label for="personal_injury">Personal injury</label>
+        </div>
+        <div>
+          <input type="checkbox" id="I need services in Vietnamese-Tiếng Việt
+, Mandarin-普通話, or Cantonese-廣東話" name="interest" value="I need services in Vietnamese-Tiếng Việt
+, Mandarin-普通話, or Cantonese-廣東話">
+          <label for="I need services in Vietnamese-Tiếng Việt
+, Mandarin-普通話, or Cantonese-廣東話">I need services in Vietnamese Tiếng Việt
+, Mandarin 普通話, or Cantonese 廣東話</label>
+        </div>
+		<input type="checkbox" id="other" name="interest" value="other">
+          <label for="other">Other</label>
+        </div>
+
+      </fieldset>
+      </select>
+    </div>
+	 <div id="submit">
+      <input type="submit" name="submit">
+    </div>
+	</form>
+</section>	
+  <footer>
+  <h4>
+ <p id="paragraph"> No matter your reason for coming to the United States – economic opportunity, to be close to a loved one, to work, or to study – you want to make sure that your experience here is enjoyable and productive. Perhaps you have made the decision to stay for an extended period or even to seek citizenship. You want to make sure that you follow the proper procedure and minimize the confusion and red tape. When you contact the Law Office of Vinh K. Ly, Attorney & Counselor at Law in Salt Lake City, Utah you get the legal assistance you need to realize your dreams and goals.
+
+I have worked with clients for years assisting them with matters related to immigration, personal injury and criminal law such as visas, green cards, deportation, burglary, fraud, and injuries. Vinh K. Ly <br>
+2900 South State Street <br><br>
+Suite 208 <br>
+Salt Lake City, UT 84115 <br>
+(801) 487-9111 </p>
+</h4>  
+</footer>
+  </body>
+  
+  </html>

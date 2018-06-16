@@ -1,0 +1,145 @@
+<html>
+
+<head>
+  <title> Bamboo Relatioinships </title>
+  <link href="https://fonts.googleapis.com/css?family=Fira+Mono|Share+Tech+Mono" rel="stylesheet">
+</head>
+<style>
+body {background-image: url(https://images.pexels.com/photos/60877/pexels-photo-60877.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+ }
+#transbox{margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: .6;
+color: black;}
+#title {text-align: center;
+  color:black;
+}
+#description{ text-align: center;
+  font-style: italic;
+  color: black;
+}
+table {text-align: center;
+}
+.basic-info {margin: 20px auto;
+width: 320px;
+color: white;  
+}
+form{margin: 20px auto;
+  
+}
+
+input {padding: 10px;
+  font-size: inherit;
+}
+input[type="text"]{display: block;
+margin-bottom: 25px;
+width: 100%;
+border:2px solid black;}
+
+input[type="radio"]{margin-bottom: 25px;
+
+}
+
+input[type="checkbox"]{margin-bottom: 25px;
+}
+#scrolldown{margin-top: 25px;
+margin-bottom: 25px;
+display: block;
+  width: 100%;
+
+}
+input[type="submit"]{margin-top: 25px;
+display: block;
+margin-bottom: 25px;
+width: 100%;
+border:2px solid black;
+background: green;
+color: white;
+font-weight: bold;}
+
+.transbox1{margin: auto;
+  margin-left: 300px;
+  margin-right: 300px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: .8;
+color: black;}
+
+fieldset{font-weight: bold;}
+
+
+
+
+
+</style>
+<body>
+  <div class="transbox1">
+    <div id="title">
+      <h1> Email Subscription </h1>
+    </div>
+    <div id="description">
+      <h3> Sign up to receive weekly articles </h3>
+    </div>
+  </div>
+  <form action="#" method="post" class="basic-info">
+    <input type="text" placeholder="name">
+    <input type="text" placeholder="email">
+    <input type="text" placeholder="age">
+
+    <div id="gender-type">
+      <label>
+      <input type="radio" class="radio" id="male" name="gender"><label for="male">Male</label>
+      <input type="radio" class="radio" id="female" name="gender"><label for="male">Female</label>
+      </label>
+    </div>
+
+    <div id="transbox">
+      <fieldset>
+        <legend>Your interests</legend>
+        <div>
+          <input type="checkbox" id="resolving-arguments" name="interest" value="Resolving arguments">
+          <label for="resolving-arguments">Resolving Arguments</label>
+        </div>
+        <div>
+          <input type="checkbox" id="sexual-intimacy" name="interest" value="sexual-intimacy">
+          <label for="meaning-love">Sexual Intimacy</label>
+        </div>
+        <div>
+          <input type="checkbox" id="attraction" name="interest" value="attraction">
+          <label for="attraction">Attraction</label>
+        </div>
+        <div>
+          <input type="checkbox" id="commitment-issues" name="interest" value="commitment-issues">
+          <label for="commitment-issues">Commitment issues</label>
+        </div>
+        <div>
+          <input type="checkbox" id="finances" name="interest" value="finances">
+          <label for="finances">Finances</label>
+        </div>
+        <div>
+          <input type="checkbox" id="communication" name="interest" value="communication">
+          <label for="communication">Communication</label>
+        </div>
+        <div>
+          <input type="checkbox" id="unity-in-parenting" name="interest" value="unity-in-parenting">
+          <label for="unity-in-parenting">Unity in parenting</label>
+        </div>
+      </fieldset>
+      </select>
+    </div>
+    <div id="scrolldown">
+      <select name="select an option">
+        <option value="Just got out of a relationship">Just got out of a relationship</option>
+ <option value="Looking for a relationship">Looking for a relationship</option>
+ <option value="Having trouble getting in a relationship">Having trouble getting in a relationship</option>
+ <option value="Other">Other</option><br>
+   </div>
+    <div id="submit">
+      <input type="submit" name="submit">
+    </div>
+  </form>
+
+</body>

@@ -1,0 +1,403 @@
+<html>
+
+<head>
+  <title>
+    Lawyer Vinh
+  </title>
+  <link href="https://fonts.googleapis.com/css?family=Fira+Mono|Share+Tech+Mono" rel="stylesheet" rel="stylesheet" href="style.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
+</head>
+
+<style>
+  #at-law{color: white;}
+:root {
+    --primary: #ddd;
+    --dark: #333;
+    --light: #fff;
+    --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+  }
+
+  html {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--dark);
+  }
+
+  body {
+    background: #5F9EA0;
+    margin: 30px 50px;
+    line-height: 1.4;
+  }
+
+  .btn {
+    background: var(--dark);
+    color: var(--light);
+    padding: 0.6rem 1.3rem;
+    text-decoration: none;
+    border: none;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  .wrapper {
+    display: grid;
+    grid-gap: 20px;
+  }
+
+  
+  /* Navigation */
+
+  .main-nav ul {
+    display: grid;
+    grid-gap: 20px;
+    padding: 0;
+    list-style: none;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .main-nav a {
+    background: var(--primary);
+    display: block;
+    text-decoration: none;
+    padding: 0.8rem;
+    text-align: center;
+    color: var(--dark);
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    box-shadow: var(--shadow);
+  }
+.main-nav a:hover {
+  background: var(--dark);
+  color: var(--light);
+}
+
+/* Top Container */
+.top-container {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-areas:
+    'showcase showcase top-box-a'
+    'showcase showcase top-box-b';
+}
+
+
+/* Showcase */
+.showcase {
+  grid-area: showcase;
+  min-height: 400px;
+  background: url(https://images.pexels.com/photos/159832/justice-law-case-hearing-159832.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-size: cover;
+  background-position: center;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  box-shadow: var(--shadow);
+}
+
+.showcase h1 {
+  font-size: 4rem;
+  margin-bottom: 0;
+  color: white;
+  font-weight: bold;
+  
+}
+
+.showcase p {
+  font-size: 1.3rem;
+  margin-top: 0;
+  color: white;
+  }
+
+/* Top Box */
+.top-box {
+  background: var(--primary);
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  box-shadow: var(--shadow);
+  padding: 1.5rem;
+}
+
+.top-box .price {
+  font-size: 2.5rem;
+}
+
+.top-box-a {
+  grid-area: top-box-a;
+}
+
+.top-box-b {
+  grid-area: top-box-b;
+}
+
+/* Boxes */
+.boxes {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.box {
+  background: var(--primary);
+  text-align: center;
+  padding: 1.5rem 2rem;
+  box-shadow: var(--shadow);
+}
+
+/* Info */
+.info {
+  background: var(--primary);
+  box-shadow: var(--shadow);
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 3rem;
+}
+
+/* Portfolio */
+.portfolio {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.portfolio img {
+  width: 100%;
+  box-shadow: var(--shadow);
+}
+
+/* Footer */
+footer {
+  margin-top: 2px;
+  background: var(--dark);
+  color: var(--light);
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Media Queries */
+@media (max-width: 700px) {
+  .top-container {
+    grid-template-areas:
+      'showcase showcase'
+      'top-box-a top-box-b';
+  }
+
+  .showcase h1 {
+    font-size: 2.5rem;
+  }
+
+  .main-nav ul {
+    grid-template-columns: 1fr;
+  }
+
+  .info {
+    grid-template-columns: 1fr;
+  }
+
+  .info .btn {
+    display: block;
+    text-align: center;
+    
+	margin-top: 100px;
+  }
+}
+
+/* associations */
+.associations {
+  background: white;
+  box-shadow: var(--shadow);
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  padding: 1.5rem;
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 1px;
+  margin-left: 120px;
+  margin-right: 120px;}
+  
+ <!-- .associations {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 1px;
+}-->
+  
+  
+ 
+
+@media (max-width: 500px) {
+  .top-container {
+    grid-template-areas:
+      'showcase'
+      'top-box-a'
+      'top-box-b';
+  }
+}
+#education1 {margin-bottom: 5px;}
+#education2 {margin-bottom: 5px;}
+#education3 {margin-bottom: 5px;}
+#education4 {margin-bottom: 15px;}
+#education5{margin-bottom: 5px;}
+#education6{margin-bottom:5px;}
+
+</style>
+
+<body>
+  <div id="logo-title">
+    <h1>
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALzSURBVGhD7dlJyE1hHMfxa57noYwLYylKkhILyjwrGyEbC0oKxUYoG2UhoUyJJAvTAgspYWGlSChEChkSZZ59f/HU4/R/zznc5977XM6vPvV2h3P+zz3nmc5bKlLktyzCXbzGHjRHXaUfzuJ7wmrURZpCxb5FshFyFNFnBK7AaoCzEtGmNbbgM6zi5Ru2oQmizETcg1W8cwtjEGW64SCswp2P2ACNVI2xBLsRTSbgGazinUsYAmU4LsO9NwU1Tws8h1+07xWWQlegI9Qvkn3nDlqipukDvyjfcfREIyzAY1ifk/WoaVSkOq9f1EPMhqLb6Tz89y3vMQA1zUCcxE1o2O2AttgMdXCrcMsZRJVheACr2CxzEU3a4G8bou/pakaTObAKzUO3ZFQ5DavQLJ/g5pyaR2uo/tBoZBWb5iV0RZV26Przz+pG9/cm3IAWj5ofrGItWkgeQg/oOBoB3ah3AlXZhGnfsQxP4QpTgzRj3/Zea4gaPg6Kliz3kfzMclQ006FCkif+gEGY7L2W9AZroF+7Ow7D+pzsREWixV/arK2r435l7QST72sJ0xdaHSzGCyQ/49MPEjQ6uZbsX2GdUI7A76Rak+mBg97Tw4epULQsOYfk933q/GposLiO/A7WCeUJGpqdV2AjWkF9ai3SjiXHoIVnkLiOnLZcF93fXZCVkbgK6xiOFp6zECwzYXVkn66CW+1mZRW+wDqO6HbdjvYIkqyO7Gjc74w80fyQ1q+uYzSCRB1ZxaWdULRJ+tNLrx/HOpZm/3UIMuFpD5HVkR2NWHmvgp9m0J7FP9YFDEbZyduR5RFmoJz0wg6cwkJoDik7vXENVtFJB9AJUUZbS6ton4bBaYg6WgtZxTv7oUc40UfPk6wG6CpE8dAsb9TZtAfwG7EPGsHqLuOx95exeqFIkSJF/stoJTsJ8wLRrlMr86pG/9S5CH9+CkEr81GoWvQIyCokhK2oWobCKiKEij3bsvLPNESbp10VMh9FIkyp9AN8uDX2/qSw0wAAAABJRU5ErkJggg==">     
+ <div id="at-law" alt="logo-title"> Vinh K. Ly Attorney At Law </div>
+    </h1>
+  </div>
+  <div class="wrapper">
+    <!-- Navigation -->
+    <nav class="main-nav">
+      <ul>
+        <li>
+          <a 
+  href="indexlawyervinh.html">Home</a> 
+        </li>
+  <li>
+    <a href="firm_overview.html">Firm Overview</a>
+    
+        </li>
+  <li>
+    <a href="practice_areas.html">Practice Areas
+    </a>
+    
+        </li>
+    <li>
+      <a 
+         href="contact_us.html">Contact Us
+      
+      </a>
+      
+        </li>
+   </ul>
+  </nav>
+ 
+    <!-- Top  Container -->
+  
+  <section class="top-container">
+ 
+  <header class="showcase">
+   
+    <h1> No Case Too Small</h1>
+   <p>Because I devote all of my attention to immigration law, personal injury, and criminal defense, I can offer a wide range of services within tightly focused areas. I assist clients like you every day with immigration law matters </p>
+    
+  <a 
+     href="read_more.html" 
+     class="btn">Click For Testimonials
+    </a>
+ </header>
+  
+  <div class="top-box top-box-a">
+ 
+    <h4> Free Consultation </h4>
+  <p class="learn-more">Learn More</p>
+  <a href="free_consultation.html" class="btn">Click Here</a>
+  </div>
+
+  <div class="top-box top-box-b">
+    <h4> Immigration FAQS </h4>
+    <p class="FAQS"></p>
+    <a href="immigration_faqs.html" class="btn">Click Here</a>
+  </div>
+
+  </section>
+  <!--Boxes Section -->
+  <section class="boxes">
+    <div class="box">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAVhSURBVGhD1Zp1qDVFGIeP3R3YqCg2dv4hiIXYitgoii2KYGJiKzZiI4oKBqiILaIoKibYothd2J3PM5yXbx1395x7d79z9/7ggfvOztmdOTszb5zbm4qaB06D1+AX+Bruh+1g0mhN+AT+qeBmmBE6rcXgC3DAvoH1YAaYF/aFL8FrV0GndTU40NthWhsyrQg/wN+wmg1d1PTwLTjIJW2o0DngZM9NVge1BDjAd5JVrS3Afnclq4NaBBzge8mq1tZgvzuS1UFNB7HR3QtVuhTsc2qyOqoLwEE+AjPbkGl9+BX+gOVs6Ko8Zt0jTuYF2AEWhZXhZPgJvHYGdF7LwuvggHM80S4El+GkkJ77YHgI3oZX4FrQQU4K6cU9hpfuswBMKq0DN8DPkC+n7+F6qHOSEypDkO3hMYhB/wX6EZeTGDzaFhPaEDqj2eAQeAtiAgaDnkQLQ66FwP1hP/3MgjCh0nOfCeYWMQEncxDMCoN0C/iZCXOE08BZ8BvEBFxOLquyCLdKa4OffTpZE6D9wAH8CbeCGzvX3HA4nA1GwWWaH7zP+8maAL0BDmCrZP1XZoPXQHhs0YuXaRXw+kvJGrGWAR/+MbjE1CywD7hEYvB67Ph7DijTTuD125I1Yh0GPtxTRy0FEeHKV3AebNy3P4AqnQD2OT1ZI9bd4MN3Tlavdyxovwy7wUygNgPbH0hWuW4E++yRrBHKJaSndpMb1arHwcHk+yXe3MXJKtdzYJ+yw2KqKr7lp5LV680F5hHmE7PbUNBlYN8Dk/V/ub8sOthnThtGqYvAB5+SrCmb9eFkTZETfBK8trkNJVocvG7IMnJFThGh93WgfRxsA3fCR/22IiZWviGzwdCm4LVHkzVCuXR8sOUdkyCXxqf9tmKEa0Bo+4tgedT+cU3MR8zfD+3bFhz0PWWYkI0lUhhKsdHdE5ZvToTiAJ8HK4dlAaCOz/5RVfQ+OsHi56uw3/LQqs6H/EGG4rtDOMc6uXdin8k34Buq4nOwn2nAMEHo0HJJHQmeUj7gQ1gJxqq9wSNc6vIRBx9HtBF1qwqPbSy1qg3jlF+I9zHU8U1VyYjafs8mqyW5fPTg3tjN2lQPgvc6PlnlsmgRIZB7rRVtBN7QlNWiQlOtAQaXHgIex5v0sb2o2JsW+1pReOuTktWOPO28Z86WEIpw3zfTyg9CsazybyyXS9D4yfLPIFlt9J4eHJ5UMTFLrEU9A7a7ZxorHJ/FhjpFLu6ptKcNNTJitq+lI6Xj/Q5ccsXCt6eW/Yy+G8kCtDf6MVnVivQ1eALqFPuuGO5fAra5lEOmzuGQyyozY5L+wxCkKgdXXvNIjYkM+m3QX3XtV8wS9eS+EaNjJxC6Cex7TLIa6F3wRpZA67QCOAF/jq5Kc0PWw7ynheyi4mg2rwl5otlmzaCRDPC80V7JakdxTyspxcNhW7D9TYjwxwAyvswNbBivDC28yT3Jai4TKvec98wnYzikbXsxpzG/t63R7ymmt3GirGtDQzkYB+UyMuvMJ+NesK14Uplx2laXQg8lwwlvZOzTJCLVyRmveXjol4y3ipOxOuMXZ4Rs2+Xgfvqsb+8IjeTgXwVv5ikynl+aLGLHWrd0FCqbzC7we78t8IQbJm0YKIt0Ubi+D+qi11xrgV7cz5rr5yFH2WRWB+MtT8JdodWs0VQ0BmQM5GuvW2oWG3RwOjQ/YziSV15C+WQOgP0LeOhEOaoV6WHvBR8ornn/e8GTxTD/CDBitZQaJVQr+G7yOqeqipMp4wpoXYbgLhNjq7KHisesxW2X5bByMv6fypUZvtlBgWsjzQeWUo8Gc3PX9VGgRx4UaLaoXu9fCCC+s04+KyIAAAAASUVORK5CYII="alt="personal injury">
+      <h3>Personal Injury</h3>
+      <p>Car accidents, truck accidents, motorcycle accidents, slip and fall, construction site accidents, workplace injuries.</p>
+    </div>
+
+    <div class="box">
+      <img src="data:image/png;base64,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" alt="criminal defense">
+      <h3>Criminal Defense</h3>
+      <p>Drug crimes, domestic violence, robbery, theft, DWI/DUI, immigration-related crimes.</p>
+    </div>
+
+    <div class="box">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAN5SURBVGhD7ZpZ6A1RHMcHUXZZshOREkJIkSVK8sALD5KyRDzwQllKKCJJCHmwljWkFFlfpGxRlhIlErI8kCU738+Zc2q6d+5153bPnX///3zr053vb87c/3ybmXPmnPsP6oIai+3infibIr/FAzFZlKVdIu6L0+KXGCISqb74KDi4D4UUVU9sFITZTCGJWgoO/GBc+pouOJ9DxiVQFsSTsiCVDNJENAg3y1YqQfqKNeK24Hi+h97vlTgtZolmIomqGqSLOCgYwDi2GK/FQkE3X4qqFmSEeCM45o/9hKP286G4a7ejcIVKuTpVCTJSfBO0vyAu2m3+aH+7fVV0FgyyeAa2t3b7umgkisl7kO7CndBO0UF8t3QS0SBohcBzpbqKF9bvF8XkPcgRQbszgp5prvUnBMoN0l7wDH0VvJSy312l0aKQvAbhJHgeOCluG3RMcNwc4/KDoJuC2njjgmClwF8zLl5eg2wQtNlqXKgngtpQ4+KD7BHUlhgXBE3Fe0GtB4UYeQ3CHIE2Y40Lby3X9bahIMUFWS6o7TYulOvdFhmXL69B6KkY6PqJnoKrwDGfrYeJtnYrUltsa+cjtbW2xkQuTt6CtBXsrzQnRZy8BeG+Zj9XhFcRuGdrPyI1BkJqnyI19xzx3a721NYKnajXW4t9tOloXBC0EnjGEPfqEfeMzBbU6OGcVglqm4zLl9cglwVtphoXiq6YWjfj4oOsE9S2GBfqkqA2zbh8eQ1CD0Obc8aF4jahNsa4+CBuEGXwRL3FT0Hn0YJCjLwGoYt1t5c78R0Cv8y4+CDPBbWBxgXBYYFnfCkkr0GQGxN4Z+I1fpL1jN4oN8hggX8pWB1ZYP0X4d4O4uQ9CG+tVwRt6bV6CSZQ+FEiNwjzFfx6MUPQ6+HZLibvQVA7cV+49nfsNrXhdpsgE4Sbq7jwsFr8T1UJgpoLJknu5BzP7CeTLm6f6D56uJmiFFUtiBPrs+7qFIIe6oBwXXQpqnoQpwGCnmufOCtOiW2CK9BaJFVqQSqtLEgWxJOyIHUiyDDBq7svpgj+flQVD8KCXHRJ1Bd7RVQVD9JQMLAd9wgrKuNEVNkzkgXxpCxIrQniFuBYWKsJYirM+TBVTqzHgoP5dWleiswXNwTnslQkFiMsszm+oCbwSDClLkuDBCuD/ASQFvyXEouB3O61XUHwDxyGawgL8qXgAAAAAElFTkSuQmCC" alt="visas">
+      <h3>Visas</h3>
+      <p>If you are coming to the US you want to ensure that you work with a lawyer where paperwork is handled accurately and deadlines are me.</p>
+    </div>
+
+    <div class="box">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAINSURBVGhD7dk9aBNxGMfxVNtJpe1Siq0I0knaDhahQnFS2lFcfFscHIS2Q6F1dRSKi4hDWyfFoeBaalEcBSddnMRBBAVBEV/6Qlva7y/JwZE8yV0uNj6p/x98yOXg+eeeXO4l/8uFhIRkygF0OnAEmTKEF9jEjhPfcB+HkSqn8AfWYB48RwsSswJrAE+uIDFrsIo9mUdirEJvniAxVqE3qRr53gRS/bRCQkKq50QT6EJirNOdN//XdcQqlG18qMMnWONmUVcjP1BPBmCNm0VdjfyC/qdkdQnWuFmEY8SbfddIT/HVjFXoTdTIWPHVjFXoTdTIVVTcK1ahN/FGKu4Vq9CbeCMzhcXyWIXexBt5VFgsj1XoTdTINbwpLJbnK6xiT+5CmcI6WvPvSvIAVrEXW9BsqLIIrTuZf1eSdrxC6QAe6A58GkovVqH1l7XCinbVTTyF5lr/NU3jLmAYykE8Q9TgHTRdurGEqAnR4VA1x3HOAV30ruMh9Hci3oRMoGrOo7TIm8/QcV01mq2wir14h0GkyhdYgzTab7yG5n0ncQZ6NJg6jX7wo1Pse+iMeRsX0YeaNtrKLKwP/Bv0XPAl7uEGTuMQ9iQXYG1ELTage6LHuIVRHEVDo4vjW1gbaPkIned1kdKzvn60wUX07S0jvsE/oVuZOYzjLDrQFDmGEWgiOdUj4pCQEE/J5XYB/dzSyqV6hf4AAAAASUVORK5CYII=">
+      <h3>Green Card</h3>
+      <p>Filling out paperwork, meeting deadlines, etc. can be overwhelming and confusing. Work with an attorney who focuses his attention helping visitors obtain visas, green cards, and ultimately, citizenship.</p>
+    </div>
+  </section>
+
+  <!-- Info -->
+  <section class="info">
+    <img src="http://www.lawyervinh.com/images/vinh.jpg" alt="Vinh Ly">
+    <div>
+      <h2> Vinh K. Ly, Attorney & Counselor at Law</h2>
+      <p>Contact a Utah immigration lawyer who can relate to your situation of living and transacting 
+	  business abroad. I also handle personal injury and criminal defense matters. Call me today at 801-487-9111. When I came to this country from Vietnam as
+        a refugee, I faced many of the same challenges, frustrations, and roadblocks you face today. Beyond the cultural barriers of language and custom, legal processes associated with your legal status in the United States can be overwhelming.
+        I understand the fears, concerns, and hopes of people wanting to live, study, work in, or become citizens of the United States – I want to help ease the process.</p>
+      <h3> Education </h3>
+	  <p>
+	  <ul>
+	 <div id="education1"> <li>J. Reuben Clark Law School Brigham Young University<br>Juris Doctor (J.D.) Law (1994) </li> </div>
+	  <div id="education6"><li>Brigham Young University<br>Masters of Public Administration (1994)</li></div>
+	  <div id="education2"><li> Brigham Young University<br>International Relations B.A.(1989)</li></div>
+	  
+	  </ul
+	  </p>
+	  <h3>Experience</h3>
+	  <p>
+	  <ul>
+	  <div id="education3"><li>Attorney and Counselor at Law<br>Law Offices of Vinh K. Ly PLLC</li></div>
+	  <div id="education5"><li>24 years of practice</li></div>
+	  <div id="education4"><li>Pro Bono Attorney of the Year 1995<br>Non-profit organization</li></div>
+
+	  </ul>
+	  
+	  <a href="contact_us.html" class="btn" id="info_btn"> Email Lawyer Vinh </a>
+	  
+    </div>
+      </section>
+	  
+	  <!---associations-->
+<div class="associations">	 
+	 <div class="column">
+	 <img src="https://denverconvention.com/images/made/uploads/applications/AAFJ_2018_315_176.jpg" alt="aafj" style="width:100%"> 
+	 </div>
+
+	 
+	 <div class="column">
+	  <img src="http://www.aila.org/images/logo.png" alt="aila" style="width:100%">
+	  </div>
+	  <div class="column">
+	  <img src="http://www.bestattorneys.com/design/images/seal-UAJ.png" alt="uafj" style="width:100%">
+	  </div>
+	  </div>
+
+  <!-- Footer -->
+  <footer>
+    
+	<p> Vinh K. Ly Attorney & Counselor at Law Salt Lake City Personal Injury and Immigration Law Attorney 2900 South State Street, Suite 208 Salt Lake City, UT 84115 Phone: (801) 487-9111 Copyright © 2009 by Vinh K. Ly Attorney at Law. All rights reserved.
+      You may reproduce materials available at this site for your own personal use and for non-commercial distribution. All copies must include this copyright statement.</p>
+  </footer>
+  </div>
+  <!--Wrapper Ends -->
+
+</body>
+
+</html>
