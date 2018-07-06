@@ -1,0 +1,300 @@
+<html>
+<title> Otago Bowen Therapy</title>
+
+<style>
+body{ background-color: #BCBCBC;
+margin: 0;
+padding: 0;
+font-family: 'Arial', serif;
+}
+
+/*variables for colors*/
+
+:root {
+--primary: #66af86;
+    --dark: #333;
+    --light: #fff;
+    --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+/* Navigation buttons */
+
+*{
+margin: 0px;
+padding: 0px;}
+
+.main-nav {
+align-items: center;}
+
+.main-nav ul {
+display:grid;
+grid-gap: 20px;
+padding: 0px;
+list-style: none;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+align-items: center;
+margin-left: 70px;
+margin-right: 70px;
+position: relative;
+}
+
+  .main-nav a {
+  display: block;
+  background: var(--primary);
+  text-decoration: none;
+    padding: 0.8rem;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    box-shadow: var(--shadow);
+     }
+.main-nav a:hover {
+  background:var(--dark);
+  color:var(--light);
+}
+.main-nav ul ul{
+ position: absolute;
+ display: none;
+ list-style: none;
+ align-items: center;
+ padding: 0.8rem;
+ font-size: 1.1rem;
+ }
+ 
+ .main-nav ul li:hover >ul{
+ display: block;
+ }
+
+/*Banner Image */
+.banner {
+width: 100%;
+display: block;}
+
+.banner >.banner-image{
+width: 100%;
+height: 25%;
+display:block;
+margin-bottom: 20px;
+}
+
+/*showcase box */
+
+.showcase {
+  grid-area: showcase;
+  min-height: 400px;
+  background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ), url(https://www.settershealthcentre.com.au/wp-content/uploads/Bowen-midback-diagonal-landscape.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  box-shadow: var(--shadow);
+  background-color: black;
+  
+  
+}
+
+
+
+.showcase h1 {
+  font-size: 4rem;
+  margin-bottom: 0;
+  color:white;
+  font-weight: bold;
+  
+}
+
+.showcase p {
+  font-size: 1.3rem;
+  margin-top: 0;
+  color: white;
+  }
+  
+  <!--.btn {background: black;
+    color: var(--light);
+    padding: 0.1rem .2rem;
+    text-decoration: none;
+    border: none;
+  }-->
+
+
+/* Info */
+
+.info {
+background:white;
+box-shadow: var(--shadow);
+display: grid;
+grid-gap: 30px;
+grid-template-columns: repeat(2, 1fr);
+padding:3rem;
+color: black;
+
+}
+.kiho{ display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+	margin-top: 50px;
+}
+
+
+/* Footer */
+footer {
+  margin-top: 2px;
+  background: var(--dark);
+  color: var(--light);
+  text-align: center;
+  padding: 1rem;
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 40px;
+	margin-left: 70px;
+	margin-right: 70px;
+  }
+  
+  .left_side {
+  position: absolute;
+  left: 16px;
+  font-family: 'Calligraffitti', cursive;
+  color: black;
+ } 
+ 
+ a:link{
+ text-decoration: none;
+ color: white;}
+  a:visited { color: white;}
+  
+  @import url('https://fonts.googleapis.com/css?family=Calligraffitti');
+  
+  .info {
+ background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ), url(https://www.runsociety.com/wp-content/uploads/2015/10/Are-Lorna-Mair-Bowen-Therapy-Techniques-the-Wave-of-the-Future-2.jpg);
+	background-position: center;
+background-size: cover;
+box-shadow: var(--shadow);
+display: grid;
+grid-gap: 30px;
+grid-template-columns: repeat(2, 1fr);
+padding:3rem;
+color: white;
+box-shadow: var(--shadow);
+  background-color: black;
+
+}
+.kiho{ display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+	margin-top: 50px;
+}
+
+  .facebook-like{
+  margin-left: 500px;}
+  
+</style>
+
+<body>
+
+<div class="banner">
+<div class="left_side"> <h1> Regenerate Body Naturally</h1> </div>
+<img class="banner-image" src="https://images.unsplash.com/photo-1422050360849-edec3f0aaf31?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6960822877e851ca25b089fe30ed4d3a&auto=format&fit=crop&w=1650&q=80">
+</div>
+
+<!--Navigation-->
+<nav class="main-nav">
+
+
+<ul>
+<li>
+	<a href="obt_main.html">Home </a>
+</li>
+
+<li>
+	<a href="bowen_therapy.html">Bowen Therapy</a>
+</li>
+
+
+<li>
+<a class="treatment">Treatment</a>
+<ul>
+	<li><a href="human.html">Human </a></li>
+	<li><a href="dog_cat.html">Dog & Cat </a></li>
+	<li><a href="horse.html">Horse</a></li>
+</ul>
+</li>
+
+<li>
+	<a href="research.html">Research </a>
+</li>
+
+<li>
+	<a href="contact_obt.html">Contact </a>
+</li>
+</ul>
+
+
+
+</nav>
+
+  
+
+<section class="info">
+ <img src="http://www.otagobowentherapy.co.nz/uploads/7/0/7/3/7073378/tlf-2_orig.png"class="kiho">
+
+<div>
+<h2> Dogs & Cats </h2><br>
+<p> 
+Soft tissue therapy for pets
+As a type of veterinary osteopathy Bowen Therapy for pets can be effective for pain in dogs and cats in the same principle that applies to human osteopathy. If you have back pain or arthritic joint pain you may seek some form of soft tissue therapies such as Physiotherapy or Osteopathy treatment for pain relief, but what do you do for your dogs or cats if he is limping because of pain? Bowen Therapy may help your pets for the following conditions.
+<ul>
+<li>Pain </li>
+<li>Arthritis</li>
+<li>Soft tissue injuries</li>
+<li>Sacroiliac dysfuction</li>
+<li>Coccyx injury</li>
+<li>Gaiting problems</li>
+<li>Hip dysplasia</li>
+ </ul>
+ </p><br>
+
+ 
+
+</div>
+</section>
+
+<div class="facebook-like">
+<iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fotagobowentherapy%2F&width=450&layout=standard&action=like&size=small&show_faces=true&share=true&height=80&appId" width="450" height="80" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+</div>
+<!-- Footer -->
+  <footer>
+    
+	<p> Dr. Kiho Lee Bowen Therapy Practitioiner <br>
+	Dunedin address: Dunedin 19 City Road, Roslyn <br>
+	Otago address: Roxburgh Medical Centre
+         65 Scotland Street<br>
+Phone: 03-487-6880 Copyright<br>
+ © 2018 by Otago Bowen Therapy. All rights reserved.
+      You may reproduce materials available at this site for your own personal use and for non-commercial distribution. All copies must include this copyright statement.</p>
+  </footer>
+
+
+
+</div>
+</div>
+
+
+</body>
+
+</html>

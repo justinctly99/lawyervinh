@@ -1,0 +1,419 @@
+<html>
+<title> Otago Bowen Therapy</title>
+
+<style>
+body{ background-color: white;
+margin: 0;
+padding: 0;
+font-family: 'Arial', serif;
+}
+
+/*variables for colors*/
+
+:root {
+--primary: #66af86;
+    --dark: #333;
+    --light: #fff;
+    --shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+}
+
+/* Navigation buttons */
+
+*{
+margin: 0px;
+padding: 0px;}
+
+.main-nav {
+align-items: center;}
+
+.main-nav ul {
+display:grid;
+grid-gap: 20px;
+padding: 0px;
+list-style: none;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+align-items: center;
+margin-left: 70px;
+margin-right: 70px;
+position: relative;
+}
+
+  .main-nav a {
+  display: block;
+  background: var(--primary);
+  text-decoration: none;
+    padding: 0.8rem;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    box-shadow: var(--shadow);
+     }
+.main-nav a:hover {
+  background:var(--dark);
+  color:var(--light);
+}
+.main-nav ul ul{
+ position: absolute;
+ display: none;
+ list-style: none;
+ align-items: center;
+ padding: 0.8rem;
+ font-size: 1.1rem;
+ }
+ 
+ .main-nav ul li:hover >ul{
+ display: block;
+ }
+
+/*Banner Image */
+.banner {
+width: 100%;
+display: block;}
+
+.banner >.banner-image{
+width: 100%;
+height: 25%;
+display:block;
+margin-bottom: 20px;
+}
+
+/*showcase box */
+
+.showcase {
+  grid-area: showcase;
+  min-height: 400px;
+  background-image: 
+    linear-gradient(
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ), url(https://www.settershealthcentre.com.au/wp-content/uploads/Bowen-midback-diagonal-landscape.jpg);
+  background-size: cover;
+  background-position: center;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  box-shadow: var(--shadow);
+  background-color: black;
+  
+  
+}
+
+
+
+.showcase h1 {
+  font-size: 4rem;
+  margin-bottom: 0;
+  color:white;
+  font-weight: bold;
+  
+}
+
+.showcase p {
+  font-size: 1.3rem;
+  margin-top: 0;
+  color: white;
+  }
+  
+  <!--.btn {background: black;
+    color: var(--light);
+    padding: 0.1rem .2rem;
+    text-decoration: none;
+    border: none;
+  }-->
+
+
+/* Info */
+
+.info {
+background:white;
+box-shadow: var(--shadow);
+display: grid;
+grid-gap: 30px;
+grid-template-columns: repeat(2, 1fr);
+padding:3rem;
+color: black;
+
+}
+.kiho{ display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+	margin-top: 50px;
+}
+
+
+/* Footer */
+footer {
+  margin-top: 2px;
+  background: var(--dark);
+  color: var(--light);
+  text-align: center;
+  padding: 1rem;
+}
+
+.wrapper {
+    display: grid;
+    grid-gap: 40px;
+	margin-left: 70px;
+	margin-right: 70px;
+  }
+  
+  .left_side {
+  position: absolute;
+  left: 16px;
+  font-family: 'Calligraffitti', cursive;
+  color: black;
+ } 
+ 
+ a:link{
+ text-decoration: none;
+ color: white;}
+  a:visited { color: white;}
+  
+  @import url('https://fonts.googleapis.com/css?family=Calligraffitti');
+  
+  /* Contact box */
+  
+  .transbox1{
+text-align: center;
+margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: .8;
+color: black;
+margin-bottom: 50px;
+margin-top: 50px;
+}
+
+/* Showcase */
+.showcase {
+  grid-area: showcase;
+  min-height: 400px;
+  background: url(https://images.pexels.com/photos/261706/pexels-photo-261706.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+  background-size: cover;
+  background-position: center;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  box-shadow: var(--shadow);
+  margin-bottom: 50px;
+}
+
+.showcase h1 {
+  font-size: 4rem;
+  margin-bottom: 0;
+  color: white;
+  
+}
+
+.showcase p {
+  font-size: 1.3rem;
+  margin-top: 0;
+  color: white;
+  }
+
+  input {padding: 10px;
+  font-size: inherit;
+}
+input[type="text"]{display: block;
+margin-bottom: 25px;
+width: 100%;
+border:2px solid black;}
+
+input[type="checkbox"]{margin-bottom: 25px;}
+
+input[type="submit"]{margin-top: 25px;
+display: block;
+margin-bottom: 25px;
+width: 100%;
+border:2px solid black;
+background: black;
+color: white;
+font-weight: bold;}
+
+form{margin: 20px auto;
+font-weight: bold;
+}
+
+  
+  legend{font-weight: bold;
+  }
+  
+  #transbox{margin: auto;
+  margin-left: 50px;
+  margin-right: auto;
+  background-color: #ffffff;
+  border: 2px solid black;
+  opacity: .9;
+color: black;
+width: 500px;
+}
+  
+  
+  * {
+    box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+	
+	.facebook-like{
+  margin-left: 500px;}
+  
+</style>
+
+<body>
+
+<div class="banner">
+<div class="left_side"> <h1> Regenerate Body Naturally</h1> </div>
+<img class="banner-image" src="https://images.unsplash.com/photo-1422050360849-edec3f0aaf31?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6960822877e851ca25b089fe30ed4d3a&auto=format&fit=crop&w=1650&q=80">
+</div>
+
+<!--Navigation-->
+<nav class="main-nav">
+
+
+<ul>
+<li>
+	<a href="obt_main.html">Home </a>
+</li>
+
+<li>
+	<a href="bowen_therapy.html">Bowen Therapy</a>
+</li>
+
+
+<li>
+<a class="treatment">Treatment</a>
+<ul>
+	<li><a href="human.html">Human </a></li>
+	<li><a href="dog_cat.html">Dog & Cat </a></li>
+	<li><a href="horse.html">Horse</a></li>
+</ul>
+</li>
+
+<li>
+	<a href="research.html">Research </a>
+</li>
+
+<li>
+	<a href="contact_obt.html">Contact </a>
+</li>
+</ul>
+
+
+
+</nav>
+<div class="transbox1">
+    <div id="title">
+      <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANpSURBVGhD7dhbqI1pHMfx5TgyTkMiZ0qNGjEu3CimJJqSw80k5dSMuUCmlIiaqGkkLiRTaiQ3Qwy5kGgaai6U1DQO4UozMUgGQ04zwve78ui1/Ndee+32Xnut3furT5b1/t+117Pf93me/7sLefLkydNw+agD6InCqw7gB4QHGk1xIA8zbzSqrShMxN9v3mhEB/ABihmOC4gK69kWdEIxn735ty9+QXRCvXmBr2G6YIovnmOhL0g37EV0cr14hM9hPsRRvF21XmKj/yFeqm/he6Uf0t5uYhLMYJyF77+3/O6BV8Ushlcre7w9XcIImHG4hnQs3EdOog/MdDxAaU2t/Yp+MNNwD9njZTdEV7BhMJ/gL0R1tbAP3WGcy9FdUnYgugH3GDMEvyOqa0ubkJbXDSg3b5sciNz1Z8H0wnFEda3tPyyFcc46d6O6pOJA9D++gumK3YjqWsu/mAHTG87ZqC6rWQNJvke6zOvQFsvzdYyHcY6eR1RXqqqB6CekvmYBniGqa4k/MBRmApyjUV2k6oHoN/SHmYp/ENVV4wS8jcxMVNuRt2gguooxMB8juzlV60c494xz0TkZ1TWlxQPREaQMQmoXmss55pKaMhpO9Ki2khYPZCdSK+MgTGrgovpS2UbVzS7dql7dy4jOaUrVA3mCRTCuYK5efqlVvkFsqXcgOjexvUiPDv7h4BS8NT/1DeJ+9TOic8upaiDZH2YvdhjZ49vRGWYFniJ7XBdhw2dGwkYwHbPeRtX4S1oLnzuy55fT7IG4KQ2A8fJfQVR3CD1gXAy+wzG4bC9DWrptxW8h+oxdSL2VTesdRHVZFQfihPTLeMuY+ai0NPpbTs8MpfFz1iC6WllnkPYUW/dziOqSJgfiCjIPxi/gzt7c3dw694aVcF+YC38h1XTRt+E+ZbzKLtNRncoOxFvHW8h4S7XXs7x7yjdIWY6omwgH4iROu6y3yJ8oram1/XA1M5NhT5Y9/s5AXCHWIzWGS1DpXq4lH/bGwgzEaaRjbwdyF6l1dsXwQCqqJ/cxG8a2Zhucj8WB+OQ3yhfElcIVI/qQeuEX34y0Z32B4p9M07rvClFuba9HPq2m1ibtO4XV8PEyOqGe2W2kvysUd92oqFE8xhyEBxtNuI80ouJADnYAXyJPnjx58tQ6hcJrX4AYV98jCL0AAAAASUVORK5CYII=" id="mail" alt="email symbol">
+	     </div>
+    <div id="description">
+      <h3> To find out more information on the specific ways I can help you, please fill out the form below.<br>
+	  </h3>
+    </div>
+  </div>
+  
+ <!-- Top  Container -->
+  
+  <section class="top-container">
+  
+ 
+        <legend></legend>
+  <header class="showcase">
+    <form action="#" method="post" class="basic-info">
+    <input type="text" placeholder="Name">
+    <input type="text" placeholder="Email">
+	<input type="text" placeholder="Phone number">
+ 
+   <div id="transbox">
+ <fieldset>
+   <div>
+          <input type="checkbox" id="General_back_pain" name="interest" value="General_back_pain">
+          <label for="General_back_pain">Back pain</label>
+        </div>
+        <div>
+          <input type="checkbox" id="Joint_problems" name="interest" value="Joint_problems">
+          <label for="Joint_problems">Joint problems</label>
+        </div>
+        <div>
+          <input type="checkbox" id="Arthritis" name="interest" value="Arthritis">
+          <label for="Arthritis">Arthritis</label>
+        </div>
+        <div>
+          <input type="checkbox" id="rare_incurable" name="interest" value="rare_incurable">
+          <label for="rare_incurable">Rare and Incurable Diseases</label>
+        </div>
+        <div>
+          <input type="checkbox" id="Breathing_digestive" name="interest" value="Breathing_digestive">
+          <label for="Breathing_digestive">Breathing/digestive problems</label>
+        </div>
+        <div>
+          <input type="checkbox" id="Neurological_disorders" name="interest" value="Neurological_disorders">
+          <label for="Neurological_disorders">Neurological disorders</label>
+        </div>
+		<div>
+		<input type="checkbox" id="other" name="interest" value="other">
+          <label for="other">Other</label>
+		  </div>
+		  <div>
+		  <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Please explain in more detail.." style="height:170px"></textarea>
+		  </div>
+        </div>
+
+      </fieldset>
+      </select>
+    </div>
+	 <div id="submit">
+      <input type="submit" name="submit">
+    </div>
+	</form>
+</section>	
+
+<div class="facebook-like">
+<iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fotagobowentherapy%2F&width=450&layout=standard&action=like&size=small&show_faces=true&share=true&height=80&appId" width="450" height="80" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+</div>
+
+<!-- Footer -->
+  <footer>
+    
+	<p> Dr. Kiho Lee Bowen Therapy Practitioiner <br>
+	Dunedin address: Dunedin 19 City Road, Roslyn <br>
+	Otago address: Roxburgh Medical Centre
+         65 Scotland Street<br>
+Phone: 03-487-6880 Copyright<br>
+ © 2018 by Otago Bowen Therapy. All rights reserved.
+      You may reproduce materials available at this site for your own personal use and for non-commercial distribution. All copies must include this copyright statement.</p>
+  </footer>
+
+
+
+
+
+
+</body>
+
+</html>
